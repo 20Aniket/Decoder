@@ -1,0 +1,1 @@
+while (binary_input := input('Enter your binary code (or "break" to exit): ').replace(" ", "")) != "break": print('Decoded Message:', ''.join([chr(int(binary_input[i:i+8], 2)) for i in range(0, len(binary_input), 8)]))
